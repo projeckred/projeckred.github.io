@@ -1,0 +1,55 @@
+.App > section#team {
+    @apply
+    bg-white
+}
+
+.App > section#team > .content {
+    @apply
+    flex flex-col items-center justify-center
+    gap-4 relative p-10
+}
+
+
+#team header {
+    @apply
+    text-center text-header2 md:text-title6 lg:text-title2
+    text-black mt-0 md:mt-4 font-extrabold z-10
+}
+
+#team .carousel-container {
+    @apply
+    flex flex-col gap-9 w-full
+}
+
+#team .carousel {
+    @apply
+    flex flex-col md:flex-row gap-4 md:gap-8
+    transition-all duration-1000
+}
+
+#team .carousel .testimonial {
+    @apply
+    border border-gray-200 p-5
+    w-full rounded-md
+    flex flex-col gap-y-4
+}
+
+#team .carousel .testimonial h4 {
+    @apply
+    text-body font-medium text-black
+}
+
+#team .carousel .testimonial p {
+    @apply
+    text-caption3 text-black
+}
+
+#team .carousel .testimonial small {
+    @apply
+    text-caption3 font-medium text-black
+}
+
+#team .indicators {
+    @apply
+    flex flex-row gap-2.5 justify-center
+}

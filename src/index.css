@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html, div#root {
+    @apply
+    h-full w-screen min-h-screen min-h-[100dvh]
+}

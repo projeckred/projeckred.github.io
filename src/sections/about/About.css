@@ -1,0 +1,29 @@
+.App > section#about {
+    @apply
+    bg-black px-12 md:px-[70px] py-10
+}
+
+.App > section#about > .content {
+    @apply
+    flex flex-col md:flex-row md:justify-between items-center
+    gap-y-5 md:gap-y-0
+}
+
+section#about p,
+.App > section#about > .content > div {
+    @apply
+    grow basis-0
+    max-w-full md:max-w-[40%]
+}
+
+section#about img {
+    @apply
+    w-full h-auto
+}
+
+
+section#about p {
+    @apply
+    text-caption3 md:text-body2 lg:text-body text-white font-normal
+    text-center md:text-left
+}

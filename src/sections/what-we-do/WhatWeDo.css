@@ -1,0 +1,59 @@
+.App > section#what-we-do {
+    @apply
+    bg-greenHazeLight p-7 md:p-16
+}
+
+.App > section#what-we-do > .content{
+    @apply
+    flex flex-col items-center justify-center gap-4
+}
+
+#what-we-do header {
+    @apply
+    text-center text-header3 md:text-title4 lg:text-header leading-[105px] text-koromiko
+}
+
+#what-we-do .subheader {
+    @apply
+    text-center text-caption3 md:text-body2 lg:text-body font-normal text-white mx-4 md:mx-10 lg:mx-40
+}
+
+#what-we-do .duties {
+    @apply
+    flex flex-row justify-center
+    mt-4
+}
+
+.duties  button {
+    @apply
+    text-center text-caption4 sm:text-body2 lg:text-button2 text-white font-bold
+    py-3 px-8
+}
+
+.duties svg.active {
+    @apply
+    opacity-100
+}
+
+#what-we-do .tasks {
+    @apply
+    grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-2 lg:gap-y-8
+    w-full md:w-8/12 lg:w-9/12 mt-3
+}
+
+.tasks .task {
+    @apply
+    bg-salem/80 rounded-md px-3.5 py-3
+    flex flex-col justify-center text-white
+    gap-2
+}
+
+.tasks .task  h4 {
+    @apply
+    text-body font-medium
+}
+
+.tasks .task  p {
+    @apply
+    text-caption font-normal
+}

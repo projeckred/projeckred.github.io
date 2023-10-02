@@ -1,0 +1,79 @@
+.App > section#mission {
+    @apply
+    bg-cream
+}
+
+.App > section#mission > .content {
+    @apply
+    flex flex-col md:flex-row items-stretch content-stretch
+}
+
+#mission > .content > div {
+    @apply
+    w-full flex-grow px-12 md:px-10 py-10
+    flex flex-col justify-center items-center
+    gap-y-7
+}
+
+#mission > .content > div.left {
+    @apply
+    bg-greenHazeLight
+}
+
+#mission > .content > div.right {
+    @apply
+    bg-cream
+}
+
+#mission > .content h2 {
+    @apply
+    text-koromiko font-extrabold text-header3 md:text-title4 lg:text-header
+    text-center
+}
+
+#mission > .content p {
+    @apply
+    text-center text-caption3 md:text-body2 lg:text-body font-normal
+}
+
+#mission > .content > .right .right-top {
+    @apply
+    w-auto h-auto grid
+}
+
+#mission > .content > .right .right-top > img {
+    clip-path: url(#mission-boy-clip-path);
+    @apply
+    w-full max-w-full
+    row-start-1 row-end-2 col-start-1 col-end-2
+}
+
+#mission > .content > .right .right-top > svg {
+    @apply
+    row-start-1 row-end-2 col-start-1 col-end-2
+    w-full
+}
+
+#mission > .content > .right .right-top > h2 {
+    @apply
+    row-start-1 row-end-2 col-start-1
+    self-end justify-self-start
+    z-10 p-8
+}
+
+#mission > .content > .left .left-bottom {
+    @apply
+    w-full h-auto grid px-10
+}
+
+#mission > .content > .left .left-bottom > img {
+    clip-path: url(#mission-girl-clip-path);
+    @apply
+    w-full max-w-full object-cover
+    row-start-1 row-end-2 col-start-1 col-end-2
+}
+
+#mission > .content > .left .left-bottom > svg {
+    @apply
+    row-start-1 row-end-2 col-start-1 col-end-2
+}

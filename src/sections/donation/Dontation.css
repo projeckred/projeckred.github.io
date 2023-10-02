@@ -1,0 +1,19 @@
+.App > section#donation {
+    @apply
+    bg-cream p-10
+}
+
+.App > section#donation > .content {
+    @apply
+    flex flex-col items-center justify-center gap-4
+}
+
+#donation  header {
+    @apply
+    text-center text-header5 sm:text-title5 lg:text-header2
+}
+
+#donation  p {
+    @apply
+    text-center text-caption4 lg:text-caption2 text-shuttleGray mb-1 font-normal mx-4 md:mx-10 lg:mx-40
+}
