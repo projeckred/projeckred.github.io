@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/projeckred.github.io/static/css/main.52d045bd.css",
-    "main.js": "/projeckred.github.io/static/js/main.5898d0b5.js",
-    "static/media/girls.jpg": "/projeckred.github.io/static/media/girls.42e35881e7af5d55e297.jpg",
-    "static/media/vision.jpg": "/projeckred.github.io/static/media/vision.b4bc39b24227e984a27b.jpg",
-    "static/media/boy-akimbo.jpg": "/projeckred.github.io/static/media/boy-akimbo.8735b1779cfd21d1e677.jpg",
-    "static/media/astro.png": "/projeckred.github.io/static/media/astro.20ace7502f3b14cad4b0.png",
-    "static/media/about_red.png": "/projeckred.github.io/static/media/about_red.fefc41c116b33f591250.png",
-    "static/media/tmi.png": "/projeckred.github.io/static/media/tmi.3d6d52afeb23876120fd.png",
-    "static/media/afkl.png": "/projeckred.github.io/static/media/afkl.ae3fba1bd9bfad280534.png",
-    "static/media/logo.png": "/projeckred.github.io/static/media/logo.36ab4ba2d21bbf2f9827.png",
-    "index.html": "/projeckred.github.io/index.html",
-    "main.52d045bd.css.map": "/projeckred.github.io/static/css/main.52d045bd.css.map",
-    "main.5898d0b5.js.map": "/projeckred.github.io/static/js/main.5898d0b5.js.map"
+    "main.css": "/static/css/main.52d045bd.css",
+    "main.js": "/static/js/main.4b81194d.js",
+    "static/media/girls.jpg": "/static/media/girls.42e35881e7af5d55e297.jpg",
+    "static/media/vision.jpg": "/static/media/vision.b4bc39b24227e984a27b.jpg",
+    "static/media/boy-akimbo.jpg": "/static/media/boy-akimbo.8735b1779cfd21d1e677.jpg",
+    "static/media/astro.png": "/static/media/astro.20ace7502f3b14cad4b0.png",
+    "static/media/about_red.png": "/static/media/about_red.fefc41c116b33f591250.png",
+    "static/media/tmi.png": "/static/media/tmi.3d6d52afeb23876120fd.png",
+    "static/media/afkl.png": "/static/media/afkl.ae3fba1bd9bfad280534.png",
+    "static/media/logo.png": "/static/media/logo.36ab4ba2d21bbf2f9827.png",
+    "index.html": "/index.html",
+    "main.52d045bd.css.map": "/static/css/main.52d045bd.css.map",
+    "main.4b81194d.js.map": "/static/js/main.4b81194d.js.map"
   },
   "entrypoints": [
     "static/css/main.52d045bd.css",
-    "static/js/main.5898d0b5.js"
+    "static/js/main.4b81194d.js"
   ]
 }
