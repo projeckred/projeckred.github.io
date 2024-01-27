@@ -28,6 +28,14 @@ div#root {
 	}
 }
 
-/* .girl-image {
+.girl-image {
 	clip-path: url(#intro-girls-clip-path);
-} */
+}
+
+.mission-image {
+	clip-path: url(#mission-girl-clip-path);
+}
+
+.vision-image {
+	clip-path: url(#mission-boy-clip-path);
+}

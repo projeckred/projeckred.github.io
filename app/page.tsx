@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Introduction from "./_components/Introduction";
 import About from "./_components/About";
+import MissionVision from "./_components/MissionVision";
 export default function Home() {
 	return (
 		<main>
 			<Introduction />
 			<About />
+			<MissionVision />
 		</main>
 	);
 }
