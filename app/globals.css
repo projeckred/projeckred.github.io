@@ -39,3 +39,7 @@ div#root {
 .vision-image {
 	clip-path: url(#mission-boy-clip-path);
 }
+
+.content {
+	@apply m-auto max-w-[1280px];
+}
