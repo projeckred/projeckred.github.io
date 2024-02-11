@@ -7,7 +7,7 @@ const MissionVision = () => {
 		"text-koromiko font-extrabold text-header2 md:text-title4 lg:text-header text-center";
 	const pStyle = "text-center text-caption3 md:text-body2 lg:text-body font-normal";
 	return (
-		<section id="mission bg-cream">
+		<section id="mission" className="bg-cream">
 			<div className="content flex flex-col md:flex-row items-stretch content-stretch max-w-[1280px] m-auto">
 				<div className={`left ${contentChildDiv} bg-greenHazeLight`}>
 					<h2 className={`${h2Style}`}>

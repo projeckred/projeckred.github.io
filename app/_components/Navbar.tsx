@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import DonateButton from "./DonateButton";
 const Navbar = () => {
-	const LinkStyles = "p-4 hover:scaleHover scaleHoverT font-medium text-sm";
+	const LinkStyles = "p-4 hover:scaleHover scaleHoverT text-base font-light";
 	const activeStyle = "bg-transparent lg:bg-black/10 font-semibold";
 	const sectionIds = ["introduction", "mission", "what-we-do", "donation", "testimonial", "footer"];
 
@@ -45,31 +45,31 @@ const Navbar = () => {
 		<>
 			<header
 				className={`fixed top-0 left-0 w-full
-    z-10 ${toggle ? "bg-black" : "bg-cream"} shadow-md`}
+    z-20 bg-black shadow-md`}
 			>
 				<div className="flex flex-row justify-between items-center py-4 gap-x-2.5 w-full md:max-w-screen-xl mx-auto px-8 md:px-16">
 					<a href="#introduction">
 						<Image
 							src="/logo.png"
-							width={64}
-							height={64}
+							width={798}
+							height={410}
 							alt="red logo with some text at bottom"
-							className="w-10 md:w-16"
+							className="w-24 md:w-32"
 						/>
 					</a>
 					<div>
-						<nav className="hidden md:flex md:justify-around items-center">
+						<nav className="hidden md:flex md:justify-around items-center text-white">
 							<a
 								className={`${LinkStyles} ${activeSection === "introduction" ? activeStyle : ""}`}
 								href="#introduction"
 							>
-								Introduction
+								About Us
 							</a>
 							<a
 								className={`${LinkStyles} ${activeSection === "mission" ? activeStyle : ""}`}
 								href="#mission"
 							>
-								Mission
+								Vision & Mission
 							</a>
 							<a
 								className={`${LinkStyles} ${activeSection === "what-we-do" ? activeStyle : ""}`}
@@ -87,7 +87,7 @@ const Navbar = () => {
 								className={`${LinkStyles} ${activeSection === "contact" ? activeStyle : ""}`}
 								href="#contact"
 							>
-								Contact
+								Contact Us
 							</a>
 						</nav>
 						<BurgerButton {...{ toggle, handleClick }} />
@@ -111,21 +111,17 @@ const BurgerButton = ({ toggle, handleClick }: burgerButtonProps) => {
 	return (
 		<div onClick={handleClick} className={`md:hidden transition-all duration-300`}>
 			<div
-				className={`${
-					toggle ? "bg-white" : "bg-black"
-				} w-8 h-[2px] rounded-full mb-2  transition-all duration-300 ${
+				className={`bg-white w-8 h-[2px] rounded-full mb-2  transition-all duration-300 ${
 					toggle ? "translate-y-[10px] -rotate-45 " : ""
 				}`}
 			></div>
 			<div
-				className={`${
-					toggle ? "bg-white" : "bg-black"
-				} w-8 h-[2px] rounded-full mb-2  transition-all duration-300 ${toggle ? "opacity-0 " : ""}`}
+				className={`bg-white w-8 h-[2px] rounded-full mb-2  transition-all duration-300 ${
+					toggle ? "opacity-0 " : ""
+				}`}
 			></div>
 			<div
-				className={`${
-					toggle ? "bg-white" : "bg-black"
-				} w-8 h-[2px] rounded-full  transition-all duration-300 ${
+				className={`bg-white w-8 h-[2px] rounded-full  transition-all duration-300 ${
 					toggle ? "translate-y-[-10px] rotate-45 " : ""
 				}`}
 			></div>
@@ -143,10 +139,10 @@ const MobileNavList = ({ toggle, handleClick }: burgerButtonProps) => {
 			}`}
 		>
 			<a className={`${linkStyle} border-t-[1px]`} onClick={handleClick} href="#introduction">
-				Introduction
+				About Us
 			</a>
 			<a className={`${linkStyle}`} onClick={handleClick} href="#mission">
-				Mission
+				Vision & Mission
 			</a>
 			<a className={`${linkStyle}`} onClick={handleClick} href="#what-we-do">
 				What We Do
@@ -155,7 +151,7 @@ const MobileNavList = ({ toggle, handleClick }: burgerButtonProps) => {
 				Testimonials
 			</a>
 			<a className={`${linkStyle} shadow-xl`} onClick={handleClick} href="#contact">
-				Contact
+				Contact Us
 			</a>
 		</nav>
 	);
