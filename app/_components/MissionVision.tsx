@@ -3,8 +3,7 @@ import Image from "next/image";
 const MissionVision = () => {
 	const contentChildDiv =
 		"w-full flex-grow px-12 md:px-10 py-10 flex flex-col justify-center items-center gap-y-7";
-	const h2Style =
-		"text-koromiko font-extrabold text-header2 md:text-title4 lg:text-header text-center";
+	const h2Style = "text-koromiko font-extrabold text-4xl md:text-4xl lg:text-5xl text-center";
 	const pStyle = "text-center text-caption3 md:text-body2 lg:text-body font-normal";
 	return (
 		<section id="mission" className="bg-cream">
@@ -58,9 +57,7 @@ const MissionVision = () => {
 							width={799}
 							height={730}
 						/>
-						<h2
-							className={`${h2Style} row-start-1 row-end-2 col-start-1 self-end justify-self-start z-10 p-8`}
-						>
+						<h2 className={`${h2Style}`}>
 							Our<span className="text-black">Vision</span>
 						</h2>
 					</div>

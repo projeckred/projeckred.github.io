@@ -12,6 +12,9 @@ const config: Config = {
 				cream: {
 					DEFAULT: "#FAF6EC",
 				},
+				deepCream: {
+					DEFAULT: "#FFF4E3",
+				},
 				greenHaze: {
 					DEFAULT: "#00A75F",
 				},
@@ -50,6 +53,30 @@ const config: Config = {
 				},
 				salem: {
 					DEFAULT: "#048D52",
+				},
+				thrive: {
+					DEFAULT: "rgba(49,104,216,1)",
+				},
+				bloom: {
+					DEFAULT: "rgba(198,47,106,1)",
+				},
+				play: {
+					DEFAULT: "rgba(255,183,44,1)",
+				},
+				code: {
+					DEFAULT: "rgba(5,165,82,1)",
+				},
+				shadowThrive: {
+					DEFAULT: "rgba(49,104,216,0.2)",
+				},
+				shadowBloom: {
+					DEFAULT: "rgba(198,47,106,0.2)",
+				},
+				shadowPlay: {
+					DEFAULT: "rgba(255,183,44,0.2)",
+				},
+				shadowCode: {
+					DEFAULT: "rgba(5,165,82,0.2)",
 				},
 			},
 		},
