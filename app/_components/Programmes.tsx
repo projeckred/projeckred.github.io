@@ -67,9 +67,9 @@ const programmes: programmesListT[] = [
 			"CODE is an introductory to computer and coding literacy classes for older students. We aim to teach the fundamentals of coding paired together with our R.ED values through individual and team based projects.",
 	},
 ];
-const OurProgramme = () => {
+const Programmes = () => {
 	return (
-		<section id="our-programme" className="bg-deepCream">
+		<section id="programmes" className="bg-deepCream">
 			<div className="content py-16 md:p-20">
 				<h2 className="text-4xl md:text-5xl font-bold text-deepBlue mb-16 text-center lg:text-left">
 					Our Programme
@@ -93,4 +93,4 @@ const OurProgramme = () => {
 	);
 };
 
-export default OurProgramme;
+export default Programmes;
