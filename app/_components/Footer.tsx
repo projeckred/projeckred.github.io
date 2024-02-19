@@ -18,7 +18,7 @@ const Footer = () => {
     gap-0.5 md:gap-3 lg:gap-4"
 					>
 						<h4
-							className="text-caption md:text-body2 lg:text-header5 text-koromiko
+							className="text-caption md:text-body2 lg:text-header5 text-koromikoLight
     text-center md:text-start font-bold"
 						>
 							Reimagine Education <span className="text-carnation">FOR THEM</span>

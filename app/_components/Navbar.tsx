@@ -5,7 +5,7 @@ import DonateButton from "./DonateButton";
 const Navbar = () => {
 	const LinkStyles = "p-4 hover:scaleHover scaleHoverT text-base font-light";
 	const activeStyle = "bg-transparent lg:bg-black/10 font-semibold";
-	const sectionIds = ["introduction", "mission", "what-we-do", "donation", "testimonial", "footer"];
+	const sectionIds = ["introduction", "mission", "programmes", "donation", "testimonial", "footer"];
 
 	const [toggle, setToggle] = useState(false);
 	const [activeSection, setActiveSection] = useState(sectionIds[0]);
@@ -41,6 +41,7 @@ const Navbar = () => {
 		};
 		// eslint-disable-next-line
 	}, [activeSection]);
+
 	return (
 		<>
 			<header
@@ -72,10 +73,10 @@ const Navbar = () => {
 								Vision & Mission
 							</a>
 							<a
-								className={`${LinkStyles} ${activeSection === "what-we-do" ? activeStyle : ""}`}
-								href="#what-we-do"
+								className={`${LinkStyles} ${activeSection === "programmes" ? activeStyle : ""}`}
+								href="#programmes"
 							>
-								What We Do
+								Programmes
 							</a>
 							<a
 								className={`${LinkStyles} ${activeSection === "testimonials" ? activeStyle : ""}`}
@@ -144,8 +145,8 @@ const MobileNavList = ({ toggle, handleClick }: burgerButtonProps) => {
 			<a className={`${linkStyle}`} onClick={handleClick} href="#mission">
 				Vision & Mission
 			</a>
-			<a className={`${linkStyle}`} onClick={handleClick} href="#what-we-do">
-				What We Do
+			<a className={`${linkStyle}`} onClick={handleClick} href="#programmes">
+				Programmes
 			</a>
 			<a className={`${linkStyle}`} onClick={handleClick} href="#testimonials">
 				Testimonials
