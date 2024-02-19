@@ -42,8 +42,11 @@ const config: Config = {
 				mineShaft: {
 					DEFAULT: "#393939",
 				},
-				koromiko: {
+				koromikoLight: {
 					DEFAULT: "#FFBD59",
+				},
+				koromiko: {
+					DEFAULT: "#FFD105",
 				},
 				koromikoDark: {
 					DEFAULT: "#FFB72C",

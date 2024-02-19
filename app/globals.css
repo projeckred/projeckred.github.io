@@ -20,6 +20,7 @@ body,
 html,
 div#root {
 	@apply h-full w-screen min-h-screen;
+	scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -41,5 +42,6 @@ div#root {
 }
 
 .content {
-	@apply m-auto max-w-[1280px];
+	margin: auto;
+	max-width: 1280px;
 }
