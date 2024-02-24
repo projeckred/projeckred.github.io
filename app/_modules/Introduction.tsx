@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DonateButton from "./DonateButton";
+import DonateButton from "../_components/DonateButton";
 const Introduction = () => {
 	return (
 		<section id="introduction" className="bg-cream">

@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Introduction from "./_components/Introduction";
-import About from "./_components/About";
-import MissionVision from "./_components/MissionVision";
-import Programmes from "./_components/Programmes";
-import Resources from "./_components/Resources";
+import Introduction from "./_modules/Introduction";
+import About from "./_modules/About";
+import MissionVision from "./_modules/MissionVision";
+import Programmes from "./_modules/Programmes";
+import Resources from "./_modules/Resources";
+import OurTeam from "./_modules/OurTeam";
 export default function Home() {
 	return (
 		<main>
@@ -12,6 +13,7 @@ export default function Home() {
 			<MissionVision />
 			<Programmes />
 			<Resources />
+			<OurTeam />
 		</main>
 	);
 }

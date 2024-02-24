@@ -1,4 +1,4 @@
-import DonateButton from "./DonateButton";
+import DonateButton from "../_components/DonateButton";
 import Image from "next/image";
 const Footer = () => {
 	let year = new Date().getFullYear();
