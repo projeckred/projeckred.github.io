@@ -3,14 +3,14 @@ import DonateButton from "../_components/DonateButton";
 const Introduction = () => {
 	return (
 		<section id="introduction" className="bg-cream">
-			<div className="content flex flex-row gap-x-0 md:gap-x-10 lg:gap-x-24 py-16 mt-[70px] md:mt-20 px-12  md:pr-0">
+			<div className="content flex flex-row gap-x-0 md:gap-x-10 lg:gap-x-24 py-16 px-12 md:mt-20  md:pr-0">
 				<div
 					className="grow basis-0
-    flex flex-col items-center md:items-start justify-center"
+    flex flex-col items-center md:items-start justify-center  mt-[80px] md:mt-0 "
 				>
 					<h2
 						className="text-black text-4xl md:text-6xl lg:text-7xl font-extrabold
-    text-center md:text-start"
+    text-center md:text-start !leading-[1.25]"
 					>
 						Reimagine Education
 					</h2>

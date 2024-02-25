@@ -14,7 +14,7 @@ let socials = [
 		link: "mailto: helloprojectred@gmail.com",
 		image: "/icons/icons8-email-50.png",
 		alt: "Mail icon by Icons8",
-		key: 0xaa,
+		key: 0xab,
 	},
 	{
 		title: "Instagram",
