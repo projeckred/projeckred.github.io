@@ -5,21 +5,21 @@ let socials = [
 	{
 		title: "Linktree",
 		link: "https://linktr.ee/projectr.ed",
-		image: "/icons/icons8-linktree-48.png",
+		image: "/icons/icons8-link-50.png",
 		alt: "Linktree icon by Icons8",
 		key: 0xaa,
 	},
 	{
 		title: "Email",
 		link: "mailto: helloprojectred@gmail.com",
-		image: "/icons/icons8-email-48.png",
+		image: "/icons/icons8-email-50.png",
 		alt: "Mail icon by Icons8",
 		key: 0xaa,
 	},
 	{
 		title: "Instagram",
 		link: "https://www.instagram.com/projectr.ed/",
-		image: "/icons/icons8-instagram-48.png",
+		image: "/icons/icons8-instagram-50.png",
 		alt: "Instagram icon by Icons8",
 		key: 0xbb,
 	},
@@ -27,7 +27,7 @@ let socials = [
 	{
 		title: "Linked In",
 		link: "https://www.linkedin.com/company/projectr-ed",
-		image: "/icons/icons8-linked-in-48.png",
+		image: "/icons/icons8-linked-in-50.png",
 		alt: "Mail icons by Icons8",
 		key: 0xdd,
 	},
