@@ -1,5 +1,38 @@
 import DonateButton from "../_components/DonateButton";
 import Image from "next/image";
+
+let socials = [
+	{
+		title: "Linktree",
+		link: "https://linktr.ee/projectr.ed",
+		image: "/icons/icons8-linktree-48.png",
+		alt: "Linktree icon by Icons8",
+		key: 0xaa,
+	},
+	{
+		title: "Email",
+		link: "mailto: helloprojectred@gmail.com",
+		image: "/icons/icons8-email-49.png",
+		alt: "Mail icon by Icons8",
+		key: 0xaa,
+	},
+	{
+		title: "Instagram",
+		link: "https://www.instagram.com/projectr.ed/",
+		image: "/icons/icons8-instagram-48.png",
+		alt: "Instagram icon by Icons8",
+		key: 0xbb,
+	},
+
+	{
+		title: "Linked In",
+		link: "https://www.linkedin.com/company/projectr-ed",
+		image: "/icons/icons8-linked-in-48.png",
+		alt: "Mail icons by Icons8",
+		key: 0xdd,
+	},
+];
+
 const Footer = () => {
 	let year = new Date().getFullYear();
 	const rightStyleP = "text-caption5 md:text-caption4 lg:text-caption font-normal text-white mb-2";
@@ -15,7 +48,7 @@ const Footer = () => {
 				>
 					<div
 						className="left flex flex-col items-center md:items-start
-    gap-0.5 md:gap-3 lg:gap-4"
+    gap-0.5 md:gap-3 lg:gap-4 lg:w-1/2"
 					>
 						<h4
 							className="text-caption md:text-body2 lg:text-header5 text-koromikoLight
@@ -36,24 +69,25 @@ const Footer = () => {
 							<DonateButton />
 						</span>
 					</div>
-					<div className="right flex flex-col items-center md:items-end">
-						<p className={`${rightStyleP}`}>Pudu, Kuala Lumpur, Malaysia</p>
-						<p className={`${rightStyleP}`}>helloprojectred@gmail.com</p>
-						<p className={`${rightStyleP}`}>@projectr.ed</p>
-						<Image
-							src={"/logo.png"}
-							alt="Logo"
-							className="w-10 aspect-auto md:mt-4 mt-7
-              hidden md:block"
-							width={512}
-							height={462}
-						/>
-						<div
-							className="motto text-caption3 text-white
-    hidden md:block"
-						>
-							<span className="font-semibold">R</span>EIMAGINE{" "}
-							<span className="font-semibold">ED</span>UCATION
+					<div className="right flex flex-col items-center my-auto">
+						<div className="footer-social-icon-div flex ">
+							{socials.map((social) => (
+								<a
+									href={social.link}
+									target="_blank"
+									rel="noreferrer"
+									key={social.key}
+									title={social.title}
+								>
+									<Image
+										src={social.image}
+										alt={social.alt}
+										width={40}
+										height={40}
+										className="w-10 h-10 mr-4 hover:scale-110 hover:rotate-6 transition-all duration-300"
+									/>
+								</a>
+							))}
 						</div>
 					</div>
 				</div>

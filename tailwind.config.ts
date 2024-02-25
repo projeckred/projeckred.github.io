@@ -36,6 +36,9 @@ const config: Config = {
 				dodgerBlue: {
 					DEFAULT: "#38B6FF",
 				},
+				dodgingBlue: {
+					DEFAULT: "#008BCE",
+				},
 				mercury: {
 					DEFAULT: "#E8E8E8",
 				},
@@ -51,6 +54,7 @@ const config: Config = {
 				koromikoDark: {
 					DEFAULT: "#FFB72C",
 				},
+				oyen: { DEFAULT: "#FF7F1D" },
 				carnation: {
 					DEFAULT: "#F05063",
 				},
