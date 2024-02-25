@@ -12,7 +12,7 @@ let socials = [
 	{
 		title: "Email",
 		link: "mailto: helloprojectred@gmail.com",
-		image: "/icons/icons8-email-49.png",
+		image: "/icons/icons8-email-48.png",
 		alt: "Mail icon by Icons8",
 		key: 0xaa,
 	},
