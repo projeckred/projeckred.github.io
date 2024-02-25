@@ -6,7 +6,14 @@ const Navbar = () => {
 	const LinkStyles =
 		"p-4 hover:scaleHover scaleHoverT text-base font-light hover:scale-95 transition-all duration-300";
 	const activeStyle = "bg-transparent lg:bg-black/10 font-semibold";
-	const sectionIds = ["introduction", "mission", "programmes", "donation", "testimonial", "footer"];
+	const sectionIds = [
+		"introduction",
+		"mission",
+		"programmes",
+		"our-team",
+		"stay-connected",
+		"footer",
+	];
 
 	const [toggle, setToggle] = useState(false);
 	const [activeSection, setActiveSection] = useState(sectionIds[0]);
@@ -80,14 +87,14 @@ const Navbar = () => {
 								Programmes
 							</a>
 							<a
-								className={`${LinkStyles} ${activeSection === "testimonials" ? activeStyle : ""}`}
-								href="#testimonials"
+								className={`${LinkStyles} ${activeSection === "our-team" ? activeStyle : ""}`}
+								href="#our-team"
 							>
-								Testimonials
+								Our Team
 							</a>
 							<a
-								className={`${LinkStyles} ${activeSection === "contact" ? activeStyle : ""}`}
-								href="#contact"
+								className={`${LinkStyles} ${activeSection === "stay-connected" ? activeStyle : ""}`}
+								href="#stay-connected"
 							>
 								Contact Us
 							</a>
