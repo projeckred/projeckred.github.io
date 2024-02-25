@@ -3,12 +3,12 @@
 const StayConnected = () => {
 	const inputStyle =
 		"bg-transparent border-solid border-2 border-white outline-none rounded-2xl font-extrabold text-center text-lg \
-      placeholder:text-white placeholder:font-extrabold focus:border-white placeholder:opacity-60";
+      placeholder:text-white placeholder:font-extrabold focus:border-white placeholder:opacity-60 py-4 px-10 md:p-0";
 	return (
 		<section id="stay-connected" className="bg-oyen">
-			<div className="content m-auto py-16 md:p-20 text-white">
+			<div className="content m-auto py-16 md:p-20 text-white px-6 md:px-0">
 				<h2 className="font-bold text-4xl md:text-5xl text-center mb-16">Stay Connected</h2>
-				<form action={""} className="flex md:flex-row justify-around">
+				<form action={""} className="flex lg:flex-row justify-around flex-col gap-4">
 					<input
 						className={inputStyle}
 						type="text"
