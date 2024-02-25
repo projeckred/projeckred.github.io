@@ -235,7 +235,7 @@ type LogoGalleryProps = {
 };
 const EffortGallery = ({ title, logos }: LogoGalleryProps) => {
 	return (
-		<div className="md:w-1/4 mx-auto mb-12">
+		<div className="md:w-1/3 mx-auto mb-12">
 			<h4 className="text-lg font-bold text-center md:mb-12 mb-4">{title}</h4>
 			<div className="flex flex-wrap justify-center gap-2">
 				{logos.map((logo) => (
