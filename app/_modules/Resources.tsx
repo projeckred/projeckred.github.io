@@ -77,7 +77,10 @@ const resourceList: ResourceCardProps[] = [
 ];
 const Resources = () => {
 	return (
-		<section id="resources" className="bg-koromiko">
+		<section
+			id="resources"
+			className="bg-koromiko bg-[url(/resources/background-vertical.png)] lg:bg-[url(/resources/background.png)] bg-cover"
+		>
 			<div className="content m-auto py-16 md:p-20">
 				<h2 className="font-bold text-4xl md:text-5xl text-center mb-16">Resources</h2>
 				<section className="flex justify-around flex-col content-center gap-10 lg:flex-row lg:gap-0">
