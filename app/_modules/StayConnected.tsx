@@ -6,7 +6,7 @@ const StayConnected = () => {
 		const data = new FormData(e.target as HTMLFormElement);
 		const action = e.target.action;
 		const currentTime = new Date();
-		data.append("Datetime", currentTime.toString());
+		data.append("Date", currentTime.toString());
 		e.target.reset();
 		fetch(action, {
 			method: "post",
@@ -25,29 +25,28 @@ const StayConnected = () => {
 				<form
 					className="flex lg:flex-row justify-around flex-col gap-4"
 					onSubmit={handleSubmit}
-					action=""
+					action="https://script.google.com/macros/s/AKfycbx4fxPI7U02TIufoiU3Xhtt2DqWB-w-lavP4IAJ2TF8f2Y_qQV68hgq0_DrtTWwqWH9ug/exec"
 					method="post"
 				>
 					<input
 						className={inputStyle}
 						type="text"
-						name="first-name"
+						name="First Name"
 						placeholder="FIRST NAME"
 						required
 					/>
 					<input
 						className={inputStyle}
 						type="text"
-						name="last-name"
+						name="Last Name"
 						placeholder="LAST NAME"
 						required
 					/>
-					<input className={inputStyle} type="email" name="email" placeholder="EMAIL" required />
+					<input className={inputStyle} type="email" name="Email" placeholder="EMAIL" required />
 					<input
 						type="submit"
 						value="SUBSCRIBE"
 						className="bg-dodgingBlue font-extrabold text-xl py-4 px-10 rounded-2xl hover:cursor-pointer hover:scale-95 transition-all duration-300"
-						onClick={(e) => e.preventDefault()}
 					/>
 				</form>
 			</div>
