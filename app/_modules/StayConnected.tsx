@@ -25,7 +25,7 @@ const StayConnected = () => {
 				<form
 					className="flex lg:flex-row justify-around flex-col gap-4"
 					onSubmit={handleSubmit}
-					action="https://script.google.com/macros/s/AKfycbx4fxPI7U02TIufoiU3Xhtt2DqWB-w-lavP4IAJ2TF8f2Y_qQV68hgq0_DrtTWwqWH9ug/exec"
+					action="https://script.google.com/macros/s/AKfycbxon2evMguAiLi3pPhYOozYVSoQMnOvpp8THcltxiEbOA8NccmLfsr2fv_pr8McDNPx/exec"
 					method="post"
 				>
 					<input
