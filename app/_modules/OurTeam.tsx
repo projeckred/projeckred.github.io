@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { teamMetadata } from "../teamConfig";
 
 type TeamMembersT = {
 	id: number;
@@ -19,7 +20,7 @@ const teamList: TeamMembersT[] = [
 		title: "CEO",
 
 		image: {
-			src: "/teams/vision.jpg",
+			src: "/teams/hilda.png",
 			width: 150,
 			height: 250,
 			alt: "image of a member",

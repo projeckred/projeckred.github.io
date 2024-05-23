@@ -1,0 +1,156 @@
+export const teamMetadata = [
+	{
+		id: 1,
+		name: "Hilda",
+		title: "CEO",
+		image: {
+			src: "/teams/hilda.png",
+			width: 216,
+			height: 270,
+			alt: "ceo hilda",
+		},
+	},
+	{
+		id: 2,
+		name: "Aunger",
+		title: "CTO",
+		image: {
+			src: "/teams/aunger.png",
+			width: 216,
+			height: 270,
+			alt: "cto aunger",
+		},
+	},
+	{
+		id: 3,
+		name: "Beatrice",
+		title: "CCO",
+		image: {
+			src: "/teams/beatrice.png",
+			width: 216,
+			height: 270,
+			alt: "cco beatrice",
+		},
+	},
+	{
+		id: 4,
+		name: "Faris",
+		title: "CCO",
+		image: {
+			src: "/teams/faris.png",
+			width: 216,
+			height: 270,
+			alt: "cco faris",
+		},
+	},
+	{
+		id: 5,
+		name: "Bekah",
+		title: "CCO",
+		image: {
+			src: "/teams/bekah.jpg",
+			width: 216,
+			height: 270,
+			alt: "cco bekah",
+		},
+	},
+	{
+		id: 6,
+		name: "BOSS MAN",
+		title: "BOSS MAN",
+		image: {
+			src: "/teams/boss_man.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS MAN",
+		},
+	},
+	{
+		id: 7,
+		name: "Deepa",
+		title: "BOSS DEEPA",
+		image: {
+			src: "/teams/deepa.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS DEEPA",
+		},
+	},
+	{
+		id: 8,
+		name: "Kelly",
+		title: "BOSS KELLY",
+		image: {
+			src: "/teams/kelly.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS KELLY",
+		},
+	},
+	{
+		id: 9,
+		name: "May",
+		title: "BOSS MAY",
+		image: {
+			src: "/teams/may.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS MAY",
+		},
+	},
+	{
+		id: 10,
+		name: "Sarah",
+		title: "BOSS SARAH",
+		image: {
+			src: "/teams/sarah.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS SARAH",
+		},
+	},
+	{
+		id: 11,
+		name: "Tanusha",
+		title: "BOSS TANUSHA",
+		image: {
+			src: "/teams/tanusha.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS TANUSHA",
+		},
+	},
+	{
+		id: 12,
+		name: "Thet",
+		title: "BOSS THET",
+		image: {
+			src: "/teams/thet.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS THET",
+		},
+	},
+	{
+		id: 13,
+		name: "Zhen",
+		title: "BOSS ZHEN",
+		image: {
+			src: "/teams/zhen.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS ZHEN",
+		},
+	},
+	{
+		id: 14,
+		name: "Zin",
+		title: "BOSS ZIN",
+		image: {
+			src: "/teams/zin.png",
+			width: 216,
+			height: 270,
+			alt: "THE BOSS ZIN",
+		},
+	},
+];
