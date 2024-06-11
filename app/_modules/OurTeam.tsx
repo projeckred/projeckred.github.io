@@ -3,7 +3,7 @@ import { teamMetadata } from "../_imageConfigs/teamConfig";
 import { partnersMetadata } from "../_imageConfigs/partnersConfig";
 import { appearancesMetadata } from "../_imageConfigs/appearancesConfig";
 import { collaborationsMetadata } from "../_imageConfigs/collaborationsConfig";
-type TeamMembersT = {
+type ConfigMetadataT = {
 	id: number;
 	name: string;
 	title: string;
@@ -13,108 +13,6 @@ type TeamMembersT = {
 		height: number;
 		alt: string;
 	};
-};
-
-const partnersList: LogoGalleryProps = {
-	title: "Partners",
-	logos: [
-		{
-			id: 0xaa,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xbb,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-	],
-};
-
-const appearanceList: LogoGalleryProps = {
-	title: "We appeared on:",
-	logos: [
-		{
-			id: 0xaa,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xbb,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xcc,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-	],
-};
-
-const collaborationList: LogoGalleryProps = {
-	title: "We collaborated with:",
-	logos: [
-		{
-			id: 0xaa,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xbb,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xcc,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xdd,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xee,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xff,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-		{
-			id: 0xf1,
-			src: "/teams/vision.jpg",
-			width: 100,
-			height: 100,
-			alt: "logo of a boy",
-		},
-	],
 };
 
 const OurTeam = () => {
@@ -158,28 +56,18 @@ const TeamGallery = () => {
 	);
 };
 
-type LogoGalleryProps = {
-	title: string;
-	logos: {
-		id: number;
-		src: string;
-		width: number;
-		height: number;
-		alt: string;
-	}[];
-};
 const EffortGallery = ({
 	title,
 	displayLists,
 }: {
 	title: string;
-	displayLists: TeamMembersT[];
+	displayLists: ConfigMetadataT[];
 }) => {
 	return (
 		<div className="md:w-1/3 mx-auto mt-12">
 			<h4 className="text-lg font-bold text-center md:mb-12 mb-4">{title}</h4>
 			<div className={`flex gap-4 justify-center flex-wrap`}>
-				{displayLists.map((effort: TeamMembersT) => (
+				{displayLists.map((effort: ConfigMetadataT) => (
 					<Image
 						key={effort.id}
 						src={effort.image.src}
