@@ -18,7 +18,7 @@ type ConfigMetadataT = {
 const OurTeam = () => {
 	return (
 		<section id="our-team" className="bg-deepCream">
-			<div className="max-w-[1420px] m-auto py-16 md:p-20 ">
+			<div className="max-w-[1640px] m-auto py-16 md:p-20 ">
 				<h2 className="font-bold text-4xl md:text-5xl text-center mb-16 text-[#2887BF]">
 					Our Team
 				</h2>
