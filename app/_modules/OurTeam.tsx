@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { teamMetadata } from "../teamConfig";
+import { teamMetadata } from "../_imageConfigs/teamConfig";
 
 type TeamMembersT = {
 	id: number;
@@ -12,76 +12,6 @@ type TeamMembersT = {
 		alt: string;
 	};
 };
-
-const teamList: TeamMembersT[] = [
-	{
-		id: 0x11,
-		name: "Hilda",
-		title: "CEO",
-
-		image: {
-			src: "/teams/hilda.png",
-			width: 150,
-			height: 250,
-			alt: "image of a member",
-		},
-	},
-	{
-		id: 0x12,
-		name: "Hilda2",
-		title: "CEO",
-		image: {
-			src: "/teams/vision.jpg",
-			width: 150,
-			height: 250,
-			alt: "image of a member",
-		},
-	},
-	{
-		id: 0x13,
-		name: "Hilda3",
-		title: "CEO",
-		image: {
-			src: "/teams/vision.jpg",
-			width: 150,
-			height: 250,
-			alt: "image of a member",
-		},
-	},
-	{
-		id: 0x14,
-		name: "Hilda4",
-		title: "CEO",
-		image: {
-			src: "/teams/vision.jpg",
-			width: 150,
-			height: 250,
-			alt: "image of a member",
-		},
-	},
-	{
-		id: 0x15,
-		name: "Hilda5",
-		title: "CEO",
-		image: {
-			src: "/teams/vision.jpg",
-			width: 150,
-			height: 250,
-			alt: "image of a member",
-		},
-	},
-	{
-		id: 0x16,
-		name: "Hilda6",
-		title: "CEO",
-		image: {
-			src: "/teams/vision.jpg",
-			width: 150,
-			height: 250,
-			alt: "image of a member",
-		},
-	},
-];
 
 const partnersList: LogoGalleryProps = {
 	title: "Partners",
@@ -188,7 +118,7 @@ const collaborationList: LogoGalleryProps = {
 const OurTeam = () => {
 	return (
 		<section id="our-team" className="bg-deepCream">
-			<div className="content m-auto py-16 md:p-20">
+			<div className="max-w-[1420px] m-auto py-16 md:p-20 ">
 				<h2 className="font-bold text-4xl md:text-5xl text-center mb-16 text-[#2887BF]">
 					Our Team
 				</h2>
@@ -205,19 +135,21 @@ const OurTeam = () => {
 
 const TeamGallery = () => {
 	return (
-		<section className="flex gap-4 justify-around flex-wrap">
-			{teamList.map((member) => (
-				<div key={member.id} className="relative">
+		<section className="flex gap-2 lg:gap-4 justify-around flex-wrap w-[95%] m-auto">
+			{teamMetadata.map((member) => (
+				<div key={member.id} className="relative group">
 					<Image
 						src={member.image.src}
-						width={member.image.width}
-						height={member.image.height}
+						width={member.image.width * 0.8}
+						height={member.image.height * 0.8}
 						alt={member.image.alt}
-						className="min-w-[150px] min-h-[250px] w-[95%] h-[100%] md:w-[150px] rounded-lg"
+						className="rounded-lg"
 					/>
-					<h4 className="absolute bottom-[0] left-[50%]  translate-x-[-50%] translate-y-[-50%] bg-mercury p-1 rounded">
-						{member.name}
-					</h4>
+					<div className="rounded-b-lg absolute w-full h-full bottom-0 left-0 duration-300 ease-in-out transform transition lg:group-hover:bg-black lg:group-hover:bg-opacity-30">
+						<h4 className="rounded-b-lg absolute bottom-0 left-0 w-full bg-black bg-opacity-50 opacity-100 text-white text-center p-2 lg:opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+							{member.name}
+						</h4>
+					</div>
 				</div>
 			))}
 		</section>
@@ -238,15 +170,9 @@ const EffortGallery = ({ title, logos }: LogoGalleryProps) => {
 	return (
 		<div className="md:w-1/3 mx-auto mb-12">
 			<h4 className="text-lg font-bold text-center md:mb-12 mb-4">{title}</h4>
-			<div className="flex flex-wrap justify-center gap-2">
+			<div className="flex gap-2 justify-around flex-wrap">
 				{logos.map((logo) => (
-					<Image
-						key={logo.id}
-						src={logo.src}
-						width={logo.width}
-						height={logo.height}
-						alt={logo.alt}
-					/>
+					<Image key={logo.id} src={logo.src} width={216} height={270} alt={logo.alt} />
 				))}
 			</div>
 		</div>
