@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { teamMetadata } from "../_imageConfigs/teamConfig";
-
+import { partnersMetadata } from "../_imageConfigs/partnersConfig";
+import { appearancesMetadata } from "../_imageConfigs/appearancesConfig";
+import { collaborationsMetadata } from "../_imageConfigs/collaborationsConfig";
 type TeamMembersT = {
 	id: number;
 	name: string;
@@ -124,9 +126,9 @@ const OurTeam = () => {
 				</h2>
 				<TeamGallery />
 				<section className="flex md:justify-around justify-center py-12 flex-col md:flex-row ">
-					<EffortGallery {...partnersList} />
-					<EffortGallery {...appearanceList} />
-					<EffortGallery {...collaborationList} />
+					<EffortGallery title="Partners" displayLists={partnersMetadata} />
+					<EffortGallery title="Appearances" displayLists={appearancesMetadata} />
+					<EffortGallery title="Collaborations" displayLists={collaborationsMetadata} />
 				</section>
 			</div>
 		</section>
@@ -166,13 +168,25 @@ type LogoGalleryProps = {
 		alt: string;
 	}[];
 };
-const EffortGallery = ({ title, logos }: LogoGalleryProps) => {
+const EffortGallery = ({
+	title,
+	displayLists,
+}: {
+	title: string;
+	displayLists: TeamMembersT[];
+}) => {
 	return (
-		<div className="md:w-1/3 mx-auto mb-12">
+		<div className="md:w-1/3 mx-auto mt-12">
 			<h4 className="text-lg font-bold text-center md:mb-12 mb-4">{title}</h4>
-			<div className="flex gap-2 justify-around flex-wrap">
-				{logos.map((logo) => (
-					<Image key={logo.id} src={logo.src} width={216} height={270} alt={logo.alt} />
+			<div className={`flex gap-4 justify-center flex-wrap`}>
+				{displayLists.map((effort: TeamMembersT) => (
+					<Image
+						key={effort.id}
+						src={effort.image.src}
+						width={effort.image.width * 0.5}
+						height={effort.image.height * 0.5}
+						alt={effort.image.alt}
+					/>
 				))}
 			</div>
 		</div>
