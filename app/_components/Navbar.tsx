@@ -11,43 +11,10 @@ export type NavItemT = {
 const Navbar = ({ navItems }: { navItems: NavItemT[] }) => {
 	const LinkStyles =
 		"p-4 hover:scaleHover scaleHoverT text-base font-light hover:scale-95 transition-all duration-300";
-	const activeStyle = "bg-transparent lg:bg-black/10 font-semibold";
 
 	const [toggle, setToggle] = useState(false);
-	const [activeSection, setActiveSection] = useState(navItems ? navItems[0].id : "");
 
 	const handleClick = () => setToggle((prevToggle: boolean) => !prevToggle);
-
-	useEffect(() => {
-		if (!navItems) return;
-
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						setActiveSection(entry.target.id);
-					}
-				});
-			},
-			{
-				root: null,
-				rootMargin: "0px",
-				threshold: 0.6,
-			},
-		);
-		navItems.forEach((item) => {
-			const section = document.getElementById(item.id);
-			if (section) observer.observe(section);
-		});
-
-		return () => {
-			navItems.forEach((item) => {
-				const section = document.getElementById(item.id);
-				if (section) observer.unobserve(section);
-			});
-		};
-		// eslint-disable-next-line
-	}, [activeSection]);
 
 	// TODO: set default  navbar
 	if (!navItems) return <></>;
@@ -71,11 +38,7 @@ const Navbar = ({ navItems }: { navItems: NavItemT[] }) => {
 						<nav className="hidden md:flex md:justify-around items-center text-white">
 							{navItems.map((item: NavItemT) => {
 								return (
-									<a
-										key={item.id}
-										className={`${LinkStyles} ${activeSection === item.id ? activeStyle : ""}`}
-										href={`#${item.id}`}
-									>
+									<a key={item.id} className={`${LinkStyles}`} href={`#${item.id}`}>
 										{item.title}
 									</a>
 								);

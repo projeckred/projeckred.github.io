@@ -1,6 +1,13 @@
 import { Metadata } from "next";
+import { ReactNode } from "react";
 
-export const blogsMetadata: { [key: string]: Metadata } = {
+// type BlogsDataT = {
+// 	title: string;
+// 	description: string;
+// 	icons: string;
+// };
+
+export const blogsData: { [key: string]: Metadata } = {
 	"introducing-red": {
 		title: "Introducing R.ED: Reimagine Education with us",
 		description: "An alternative education platform for marginalized communities in Malaysia",
