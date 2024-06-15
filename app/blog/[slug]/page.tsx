@@ -1,13 +1,15 @@
 import Navbar from "@/app/_components/Navbar";
 import type { Metadata, ResolvingMetadata } from "next";
 import { blogsMetadata } from "../_blogData/blogDataConfig";
-const sectionIds = [
-	"introduction",
-	"how-it-begin",
-	"our-why",
-	"our-programmes",
-	"whats-new",
-	"our-team",
+import { title } from "process";
+import { NavItemT } from "@/app/_components/Navbar";
+const navItems: NavItemT[] = [
+	{ id: "introduction", title: "Introducing R.ED" },
+	// { id: "how-it-begin", title: "" },
+	// { id: "our-why", title: "" },
+	{ id: "programmes-and-value", title: "Our Programmes & Core Values" },
+	{ id: "whats-new", title: "What's New?" },
+	{ id: "our-team", title: "Our Team" },
 ];
 
 type Props = {
@@ -25,7 +27,7 @@ export default function Page({ params }: Props) {
 
 	return (
 		<>
-			<Navbar {...{ sectionIds }} />
+			<Navbar {...{ navItems }} />
 			<main className="p-32">{params.slug}</main>
 		</>
 	);

@@ -7,28 +7,26 @@ import OurTeam from "./_modules/OurTeam";
 import StayConnected from "./_modules/StayConnected";
 import Navbar from "./_components/Navbar";
 
-const sectionIds = [
-	"introduction",
-	"mission",
-	"programmes",
-	"our-team",
-	"stay-connected",
-	"footer",
-];
-
 // const sectionIds = [
-// 	{id:"introduction", title:""},
-// 	{id:"mission", title:""},
-// 	{id:"programmes", title:""},
-// 	{id:"our-team", title:""},
-// 	{id:"stay-connected", title:""},
-// 	{id:"footer", title:""},
-// ]
+// 	"introduction",
+// 	"mission",
+// 	"programmes",
+// 	"our-team",
+// 	"stay-connected",
+// ];
+
+const navItems = [
+	{ id: "introduction", title: "About Us" },
+	{ id: "mission", title: "Vision & Mission" },
+	{ id: "programmes", title: "Programmes" },
+	{ id: "our-team", title: "Our Team" },
+	{ id: "stay-connected", title: "Contact Us" },
+];
 
 export default function Home() {
 	return (
 		<>
-			<Navbar {...{ sectionIds }} />
+			<Navbar {...{ navItems }} />
 			<main>
 				<Introduction />
 				<About />

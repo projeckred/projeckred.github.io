@@ -3,17 +3,24 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import DonateButton from "./DonateButton";
 
-const Navbar = ({ sectionIds }: { sectionIds: string[] }) => {
+export type NavItemT = {
+	id: string;
+	title: string;
+};
+
+const Navbar = ({ navItems }: { navItems: NavItemT[] }) => {
 	const LinkStyles =
 		"p-4 hover:scaleHover scaleHoverT text-base font-light hover:scale-95 transition-all duration-300";
 	const activeStyle = "bg-transparent lg:bg-black/10 font-semibold";
 
 	const [toggle, setToggle] = useState(false);
-	const [activeSection, setActiveSection] = useState(sectionIds[0]);
+	const [activeSection, setActiveSection] = useState(navItems ? navItems[0].id : "");
 
 	const handleClick = () => setToggle((prevToggle: boolean) => !prevToggle);
 
 	useEffect(() => {
+		if (!navItems) return;
+
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -28,21 +35,22 @@ const Navbar = ({ sectionIds }: { sectionIds: string[] }) => {
 				threshold: 0.6,
 			},
 		);
-
-		sectionIds.forEach((id) => {
-			const section = document.getElementById(id);
+		navItems.forEach((item) => {
+			const section = document.getElementById(item.id);
 			if (section) observer.observe(section);
 		});
 
 		return () => {
-			sectionIds.forEach((id) => {
-				const section = document.getElementById(id);
+			navItems.forEach((item) => {
+				const section = document.getElementById(item.id);
 				if (section) observer.unobserve(section);
 			});
 		};
 		// eslint-disable-next-line
 	}, [activeSection]);
 
+	// TODO: set default  navbar
+	if (!navItems) return <></>;
 	return (
 		<>
 			<header
@@ -50,7 +58,7 @@ const Navbar = ({ sectionIds }: { sectionIds: string[] }) => {
     z-20 bg-black shadow-md`}
 			>
 				<div className="flex flex-row justify-between items-center py-4 gap-x-2.5 w-full md:max-w-screen-xl mx-auto px-8 md:px-16">
-					<a href="#introduction">
+					<a href="/">
 						<Image
 							src="/logo.png"
 							width={798}
@@ -61,36 +69,17 @@ const Navbar = ({ sectionIds }: { sectionIds: string[] }) => {
 					</a>
 					<div>
 						<nav className="hidden md:flex md:justify-around items-center text-white">
-							<a
-								className={`${LinkStyles} ${activeSection === "introduction" ? activeStyle : ""}`}
-								href="#introduction"
-							>
-								About Us
-							</a>
-							<a
-								className={`${LinkStyles} ${activeSection === "mission" ? activeStyle : ""}`}
-								href="#mission"
-							>
-								Vision & Mission
-							</a>
-							<a
-								className={`${LinkStyles} ${activeSection === "programmes" ? activeStyle : ""}`}
-								href="#programmes"
-							>
-								Programmes
-							</a>
-							<a
-								className={`${LinkStyles} ${activeSection === "our-team" ? activeStyle : ""}`}
-								href="#our-team"
-							>
-								Our Team
-							</a>
-							<a
-								className={`${LinkStyles} ${activeSection === "stay-connected" ? activeStyle : ""}`}
-								href="#stay-connected"
-							>
-								Contact Us
-							</a>
+							{navItems.map((item: NavItemT) => {
+								return (
+									<a
+										key={item.id}
+										className={`${LinkStyles} ${activeSection === item.id ? activeStyle : ""}`}
+										href={`#${item.id}`}
+									>
+										{item.title}
+									</a>
+								);
+							})}
 						</nav>
 						<BurgerButton {...{ toggle, handleClick }} />
 					</div>
