@@ -7,10 +7,28 @@ import OurTeam from "./_modules/OurTeam";
 import StayConnected from "./_modules/StayConnected";
 import Navbar from "./_components/Navbar";
 
+const sectionIds = [
+	"introduction",
+	"mission",
+	"programmes",
+	"our-team",
+	"stay-connected",
+	"footer",
+];
+
+// const sectionIds = [
+// 	{id:"introduction", title:""},
+// 	{id:"mission", title:""},
+// 	{id:"programmes", title:""},
+// 	{id:"our-team", title:""},
+// 	{id:"stay-connected", title:""},
+// 	{id:"footer", title:""},
+// ]
+
 export default function Home() {
 	return (
 		<>
-			<Navbar />
+			<Navbar {...{ sectionIds }} />
 			<main>
 				<Introduction />
 				<About />

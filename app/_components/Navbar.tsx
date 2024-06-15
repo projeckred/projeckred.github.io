@@ -2,18 +2,11 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import DonateButton from "./DonateButton";
-const Navbar = () => {
+
+const Navbar = ({ sectionIds }: { sectionIds: string[] }) => {
 	const LinkStyles =
 		"p-4 hover:scaleHover scaleHoverT text-base font-light hover:scale-95 transition-all duration-300";
 	const activeStyle = "bg-transparent lg:bg-black/10 font-semibold";
-	const sectionIds = [
-		"introduction",
-		"mission",
-		"programmes",
-		"our-team",
-		"stay-connected",
-		"footer",
-	];
 
 	const [toggle, setToggle] = useState(false);
 	const [activeSection, setActiveSection] = useState(sectionIds[0]);
