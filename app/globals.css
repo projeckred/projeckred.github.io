@@ -20,6 +20,7 @@ body,
 html,
 div#root {
 	@apply h-full w-screen min-h-screen;
+	scroll-padding-top: 5em;
 	scroll-behavior: smooth;
 }
 

@@ -87,7 +87,7 @@ const Navbar = ({ navItems }: { navItems: NavItemT[] }) => {
 						<DonateButton />
 					</div>
 				</div>
-				<MobileNavList {...{ toggle, handleClick }} />
+				<MobileNavList {...{ toggle, handleClick, navItems }} />
 			</header>
 		</>
 	);
@@ -120,7 +120,11 @@ const BurgerButton = ({ toggle, handleClick }: burgerButtonProps) => {
 	);
 };
 
-const MobileNavList = ({ toggle, handleClick }: burgerButtonProps) => {
+const MobileNavList = ({
+	toggle,
+	handleClick,
+	navItems,
+}: burgerButtonProps & { navItems: NavItemT[] }) => {
 	const linkStyle =
 		"py-6 px-8 text-right border-b-[1px] border-gray font-semibold text-sm text-white border-mineShaft";
 	return (
@@ -129,21 +133,18 @@ const MobileNavList = ({ toggle, handleClick }: burgerButtonProps) => {
 				toggle ? "block" : "hidden"
 			}`}
 		>
-			<a className={`${linkStyle} border-t-[1px]`} onClick={handleClick} href="#introduction">
-				About Us
-			</a>
-			<a className={`${linkStyle}`} onClick={handleClick} href="#mission">
-				Vision & Mission
-			</a>
-			<a className={`${linkStyle}`} onClick={handleClick} href="#programmes">
-				Programmes
-			</a>
-			<a className={`${linkStyle}`} onClick={handleClick} href="#testimonials">
-				Testimonials
-			</a>
-			<a className={`${linkStyle} shadow-xl`} onClick={handleClick} href="#contact">
-				Contact Us
-			</a>
+			{navItems.map((item) => {
+				return (
+					<a
+						key={item.id}
+						className={`${linkStyle} border-t-[1px]`}
+						onClick={handleClick}
+						href={`#${item.id}`}
+					>
+						{item.title}
+					</a>
+				);
+			})}
 		</nav>
 	);
 };
