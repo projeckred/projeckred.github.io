@@ -46,9 +46,11 @@ const TeamGallery = () => {
 						className="rounded-lg"
 					/>
 					<div className="rounded-b-lg absolute w-full h-full bottom-0 left-0 duration-300 ease-in-out transform transition lg:group-hover:bg-black lg:group-hover:bg-opacity-30">
-						<h4 className="rounded-b-lg absolute bottom-0 left-0 w-full bg-black bg-opacity-50 opacity-100 text-white text-center p-2 lg:opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-							{member.name}
-						</h4>
+						<div className="rounded-b-lg absolute bottom-0 left-0 w-full bg-black bg-opacity-50 opacity-100 text-white text-center p-2 lg:opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+							<h4 className="">{member.name}</h4>
+							<hr className="w-1/3 my-2 m-auto"></hr>
+							<p>{member.title}</p>
+						</div>
 					</div>
 				</div>
 			))}
