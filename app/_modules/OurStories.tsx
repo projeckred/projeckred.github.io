@@ -1,11 +1,11 @@
 import { BlogCard } from "../blog/_components/BlogCard";
 import { blogsCardData } from "../blog/_blogData/blogData";
 
-const Resources = () => {
+const OurStories = () => {
 	return (
 		<section
-			id="resources"
-			className="bg-koromiko bg-[url(/resources/background-vertical.png)] lg:bg-[url(/resources/background.png)] bg-cover"
+			id="our-stories"
+			className="bg-koromiko bg-[url(/our-stories/background-vertical.png)] lg:bg-[url(/resources/background.png)] bg-cover"
 		>
 			<div className="content m-auto py-16 md:p-20">
 				<h2 className="font-bold text-4xl md:text-5xl text-center mb-16">Our Stories</h2>
@@ -36,4 +36,4 @@ const Resources = () => {
 	);
 };
 
-export default Resources;
+export default OurStories;
