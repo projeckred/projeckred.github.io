@@ -1,3 +1,4 @@
+import Link from "next/link";
 import DonateButton from "../_components/DonateButton";
 import Image from "next/image";
 
@@ -72,7 +73,7 @@ const Footer = () => {
 					<div className="right flex flex-col items-center my-auto">
 						<div className="footer-social-icon-div flex ">
 							{socials.map((social) => (
-								<a
+								<Link
 									href={social.link}
 									target="_blank"
 									rel="noreferrer"
@@ -86,7 +87,7 @@ const Footer = () => {
 										height={40}
 										className="w-10 h-10 mr-4 hover:scale-110 hover:rotate-6 transition-all duration-300"
 									/>
-								</a>
+								</Link>
 							))}
 						</div>
 					</div>

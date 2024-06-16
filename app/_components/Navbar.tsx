@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import DonateButton from "./DonateButton";
+import Link from "next/link";
 
 export type NavItemT = {
 	id: string;
@@ -25,7 +26,7 @@ const Navbar = ({ navItems }: { navItems: NavItemT[] }) => {
     z-20 bg-black shadow-md`}
 			>
 				<div className="flex flex-row justify-between items-center py-4 gap-x-2.5 w-full md:max-w-screen-xl mx-auto px-8 md:px-16">
-					<a href="/">
+					<Link href="/">
 						<Image
 							src="/logo.png"
 							width={798}
@@ -33,14 +34,14 @@ const Navbar = ({ navItems }: { navItems: NavItemT[] }) => {
 							alt="red logo with some text at bottom"
 							className="w-24 md:w-32"
 						/>
-					</a>
+					</Link>
 					<div>
 						<nav className="hidden md:flex md:justify-around items-center text-white">
 							{navItems.map((item: NavItemT) => {
 								return (
-									<a key={item.id} className={`${LinkStyles}`} href={`#${item.id}`}>
+									<Link key={item.id} className={`${LinkStyles}`} href={`#${item.id}`}>
 										{item.title}
-									</a>
+									</Link>
 								);
 							})}
 						</nav>
@@ -98,14 +99,14 @@ const MobileNavList = ({
 		>
 			{navItems.map((item) => {
 				return (
-					<a
+					<Link
 						key={item.id}
 						className={`${linkStyle} border-t-[1px]`}
 						onClick={handleClick}
 						href={`#${item.id}`}
 					>
 						{item.title}
-					</a>
+					</Link>
 				);
 			})}
 		</nav>

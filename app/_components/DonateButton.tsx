@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 type DonateButtonProps = {
 	text?: string;
 };
 
 const DonateButton = ({ text = "Donate Now" }) => {
 	return (
-		<a
+		<Link
 			href="https://docs.google.com/forms/d/e/1FAIpQLSfNdxpuKbsNqgBAx_to1Sgkl4q_n4wdlErPjVWPHsC-w4n_qQ/viewform?usp=sf_link"
 			target="_blank"
 			className="bg-greenHaze rounded-[5px]
@@ -15,7 +17,7 @@ const DonateButton = ({ text = "Donate Now" }) => {
 			rel="noreferrer"
 		>
 			{text}
-		</a>
+		</Link>
 	);
 };
 

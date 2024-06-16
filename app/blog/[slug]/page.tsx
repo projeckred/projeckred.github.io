@@ -4,6 +4,7 @@ import { blogsMetadata } from "../_blogData/blogData";
 import { NavItemT } from "@/app/_components/Navbar";
 import IntroducingRed from "../_blogs/IntroducingRed";
 import TransformingCommunities from "../_blogs/TransformingCommunities";
+import Link from "next/link";
 
 type Props = {
 	params: { slug: string };
@@ -34,7 +35,7 @@ const GoBack = () => {
 			<section className="p-20 flex flex-col h-[80%] ">
 				<div className="m-auto text-center">
 					<h1 className="p-10 m-auto">Whooops Pages Does Not Exist!</h1>
-					<a
+					<Link
 						href="/"
 						className="bg-dodgingBlue rounded-[5px] m-auto
 					px-5 py-2.5 text-white font-medium text-button
@@ -44,7 +45,7 @@ const GoBack = () => {
 						rel="noreferrer"
 					>
 						GO BACK!
-					</a>
+					</Link>
 				</div>
 			</section>
 		</>
