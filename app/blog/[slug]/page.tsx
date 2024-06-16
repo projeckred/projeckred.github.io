@@ -1,6 +1,6 @@
 import Navbar from "@/app/_components/Navbar";
 import type { Metadata, ResolvingMetadata } from "next";
-import { blogsData } from "../_blogData/blogDataConfig";
+import { blogsMetadata } from "../_blogData/blogData";
 import { NavItemT } from "@/app/_components/Navbar";
 import IntroducingRed from "../_blogs/IntroducingRed";
 import TransformingCommunities from "../_blogs/TransformingCommunities";
@@ -12,12 +12,12 @@ type Props = {
 export function generateMetadata({ params }: Props, parent: ResolvingMetadata): Metadata {
 	const slug = params.slug;
 
-	return blogsData[slug] && blogsData[slug];
+	return blogsMetadata[slug] && blogsMetadata[slug];
 }
 
 export default function Page({ params }: Props) {
 	// get contents base on route slug
-	if (!blogsData[params.slug]) {
+	if (!blogsMetadata[params.slug]) {
 		return <GoBack />;
 	}
 	return (

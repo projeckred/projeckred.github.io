@@ -7,8 +7,8 @@ import BlogP from "../_components/BlogP";
 import BlogH2 from "../_components/BlogH2";
 const navItems: NavItemT[] = [
 	{ id: "transform", title: "Transforming Communities" },
-	{ id: "pilot-programme", title: "The Pilot Programme" },
-	{ id: "the-plan", title: "The Plan For 2024" },
+	{ id: "pilot-programme", title: "Pilot Programme" },
+	{ id: "the-plan", title: "Plan For 2024" },
 ];
 const TransformingCommunities = () => {
 	return (

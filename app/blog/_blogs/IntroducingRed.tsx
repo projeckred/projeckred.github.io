@@ -52,9 +52,7 @@ const IntroducingRed = () => {
 						need a form of education that will equip them with the necessary skills to not just
 						survive, but thrive in any uncertain future.
 					</p>
-					<h2 className="text-3xl font-semibold text-gray-900 mt-12 mb-4">
-						R.ED: Reimagine Education
-					</h2>
+					<BlogH2>R.ED: Reimagine Education</BlogH2>
 					<Image
 						src="/blogs/introducing-red/tiny-women-coloring.jpg"
 						alt="tiny human coloring"
@@ -70,7 +68,7 @@ const IntroducingRed = () => {
 						themselves.
 					</p>
 
-					<h2 className="text-3xl font-semibold text-gray-900 mt-12 mb-4">How Did It Begin?</h2>
+					<BlogH2>How Did It Begin?</BlogH2>
 					<p className="text-gray-700 text-lg leading-relaxed mb-6">
 						R.ED was founded by Hilda Paviter, an educator at heart and in profession, and Aunger
 						Aung, an advocate passionate in youth empowerment and a refugee herself. They first met
@@ -87,9 +85,7 @@ const IntroducingRed = () => {
 						life. Since the very beginning of R.ED, we believe every child deserves this
 						opportunity, regardless of their background.
 					</p>
-					<h2 className="text-3xl font-semibold text-gray-900 mt-12 mb-4">
-						Our Why - Mission & Vision
-					</h2>
+					<BlogH2>Our Why - Mission & Vision</BlogH2>
 					<p className="text-gray-700 text-lg leading-relaxed mb-4">
 						<span className="font-bold">Our Vision</span>- All children will be equipped with the
 						values and skills to thrive in any uncertainty or journey they go through in order to be
@@ -117,9 +113,7 @@ const IntroducingRed = () => {
 					/>
 				</section>
 				<section id="programmes-and-value">
-					<h2 className="text-3xl font-semibold text-gray-900 mt-12 mb-4">
-						Our Programmes & Core Values
-					</h2>
+					<BlogH2>Our Programmes & Core Values</BlogH2>
 					<p className="text-gray-700 text-lg leading-relaxed mb-6">
 						Traditional classroom learning tends to focus on memorization and standardised tests,
 						often neglecting the need for creativity and emotional intelligence for the students.
