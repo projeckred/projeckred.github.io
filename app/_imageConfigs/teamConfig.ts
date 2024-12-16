@@ -1,0 +1,156 @@
+export const teamMetadata = [
+	{
+		id: 1,
+		name: "Hilda",
+		title: "Co-Founder",
+		image: {
+			src: "/teams/hilda.png",
+			width: 216,
+			height: 270,
+			alt: "Co-Founder Hilda",
+		},
+	},
+	{
+		id: 2,
+		name: "Aunger",
+		title: "Co-Founder",
+		image: {
+			src: "/teams/aunger.png",
+			width: 216,
+			height: 270,
+			alt: "Co-Founder Aunger",
+		},
+	},
+	{
+		id: 4,
+		name: "Faris",
+		title: "Head of Design",
+		image: {
+			src: "/teams/faris.png",
+			width: 216,
+			height: 270,
+			alt: "Head of Design faris",
+		},
+	},
+	{
+		id: 5,
+		name: "Rebekah",
+		title: "Head of Monitoring & Evaluation",
+		image: {
+			src: "/teams/bekah.jpg",
+			width: 216,
+			height: 270,
+			alt: "Head of Monitoring & Evaluation Rebekah",
+		},
+	},
+	{
+		id: 12,
+		name: "Thet",
+		title: "Head of Marketing",
+		image: {
+			src: "/teams/thet.png",
+			width: 216,
+			height: 270,
+			alt: "Head of Marketing Thet",
+		},
+	},
+	{
+		id: 14,
+		name: "Zin",
+		title: "Head of Partnerships & Development",
+		image: {
+			src: "/teams/zin.png",
+			width: 216,
+			height: 270,
+			alt: "Head of Partnerships & Development ZIN",
+		},
+	},
+	{
+		id: 6,
+		name: "Tien Sing",
+		title: "Deputy Head of Partnership & Development",
+		image: {
+			src: "/teams/boss_man.png",
+			width: 216,
+			height: 270,
+			alt: "Deputy Head of Partnership & Development Tien Sing",
+		},
+	},
+	{
+		id: 7,
+		name: "Deepa",
+		title: "Head of Programme",
+		image: {
+			src: "/teams/deepa.png",
+			width: 216,
+			height: 270,
+			alt: "Head of Programme Deepa",
+		},
+	},
+	{
+		id: 8,
+		name: "Kelly",
+		title: "THRIVE Lead",
+		image: {
+			src: "/teams/kelly.png",
+			width: 216,
+			height: 270,
+			alt: "Thrive Lead Kelly",
+		},
+	},
+	{
+		id: 13,
+		name: "Zhen",
+		title: "CODE Lead",
+		image: {
+			src: "/teams/zhen.png",
+			width: 216,
+			height: 270,
+			alt: "CODE Lead ZHEN",
+		},
+	},
+	{
+		id: 9,
+		name: "May",
+		title: "PLAY Lead",
+		image: {
+			src: "/teams/may.png",
+			width: 216,
+			height: 270,
+			alt: "PLAY Lead May",
+		},
+	},
+	{
+		id: 10,
+		name: "Sarah",
+		title: "PLAY Lead",
+		image: {
+			src: "/teams/sarah.png",
+			width: 216,
+			height: 270,
+			alt: "PLAY Lead Sarah",
+		},
+	},
+	{
+		id: 3,
+		name: "Beatrice",
+		title: "BLOOM Lead",
+		image: {
+			src: "/teams/beatrice.png",
+			width: 216,
+			height: 270,
+			alt: "Bloom Lead Beatrice",
+		},
+	},
+	{
+		id: 11,
+		name: "Tanusha",
+		title: "BLOOM Lead",
+		image: {
+			src: "/teams/tanusha.png",
+			width: 216,
+			height: 270,
+			alt: "BLOOM Lead Tanusha",
+		},
+	},
+];
