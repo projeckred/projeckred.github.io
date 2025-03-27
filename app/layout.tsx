@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: "R.ED",
+	title: "R.ED - Reimagine Education",
 	description: "An alternative education platform for marginalized communities in Malaysia",
 	icons: "/logo.png",
 };
