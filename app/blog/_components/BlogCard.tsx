@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode } from "react";
-
 export function BlogCard({
 	title,
 	image,
@@ -16,7 +14,7 @@ export function BlogCard({
 	return (
 		<div className="bg-cream rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 max-w-[95%] m-auto">
 			<div className="relative h-48">
-				<Image src={image} alt={title} layout="fill" objectFit="cover" />
+				<Image src={image} alt={title} className="object-cover" fill />
 			</div>
 			<div className="p-6">
 				<h2 className="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
