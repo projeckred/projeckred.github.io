@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import { ReactNode } from "react";
 import { BlogCardOldProps } from "../_components/BlogCard";
-
+import tinyWomenColoring from "@/public/blogs/introducing-red/tiny-women-coloring.jpg";
+import tinyHumanColoring from "@/public/blogs/transforming-communities/tiny-human-writing.webp";
 // type blogsMetadataT = {
 // 	title: string;
 // 	description: string;
@@ -24,14 +24,14 @@ export const blogsMetadata: { [key: string]: Metadata } = {
 export const blogsCardData = [
 	{
 		title: "Introducing R.ED: Reimagine Education with us",
-		image: "/blogs/transforming-communities/tiny-human-writing.webp",
+		image: tinyHumanColoring,
 		excerpt:
 			"Every child has the right to quality education, among other fundamental rights. However, refugee children are often denied such rights...",
 		link: "/blog/introducing-red",
 	},
 	{
 		title: "Transforming Communities Through Education: R.ED & Our Beginnings",
-		image: "/blogs/introducing-red/tiny-women-coloring.jpg",
+		image: tinyWomenColoring,
 		excerpt:
 			"Today, we have expanded from a team of 8 to over 40 volunteers. Looking back, I would have never imagined we would get this far...",
 		link: "/blog/transforming-communities",
